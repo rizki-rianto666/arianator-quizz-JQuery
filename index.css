@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'monsterrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/ariana-black.jfif) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+main {
+    backdrop-filter: blur(3px);
+    height: 80%;
+    box-shadow: -3px 3px 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main div h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-family: 'luckiest guy';
+    letter-spacing: 3px;
+    -webkit-text-stroke: rgba(215, 88, 244, 0.784) 1px;
+}
+
+main div h2 {
+    color: rgb(190, 190, 190);
+    font-size: 1.4rem;
+    margin-bottom: 90px;
+    font-family: 'monsterrat';
+    -webkit-text-stroke: rgba(39, 2, 45, 0.784) 1px;
+}
+
+main div a {
+    font-family: 'Luckiest guy';
+    font-size: 4rem;
+    padding: 30px;
+    border-radius: 4px;
+    width: 35%;
+    text-decoration: none;
+    background-image: url(images/ariana1.jfif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    background-position-x: center;
+    background-position-y: 22%;
+    transition: all 0.2s;
+    -webkit-text-stroke: white 1px;
+}
+
+
+
+main div a:hover {
+    letter-spacing: 4px;
+}
+
+
+.whatfan {
+    color: rgb(243, 89, 238);
+    font-style: italic;
+}

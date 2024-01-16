@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'monsterrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/grammy.jfif) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'monsterrat';
+    font-weight: bold;
+
+}
+
+main {
+    backdrop-filter: blur(5px);
+    height: 80%;
+    box-shadow: -3px 3px 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form {
+    width: 400px;
+
+}
+
+
+
+form label {
+    display: block;
+    color: rgb(101, 128, 160);
+    font-weight: bolder;
+    -webkit-text-stroke: rgb(250, 250, 250) 0.5px;
+    font-size: 1.4rem;
+    margin-bottom: 7px;
+}
+
+#name {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    background-color: rgba(88, 126, 175, 0.474);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    border: white 1px solid;
+    font-family: 'monsterrat';
+    font-size: 120%;
+}
+
+main button {
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(8, 8, 8, 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url(../images/ariana2.jfif);
+    -webkit-text-stroke: white 1px;
+    font-size: 2.5rem;
+    border: none;
+    font-family: 'luckiest guy';
+    cursor: pointer;
+    transition: letter-spacing 0.2s;
+}
+
+main button:hover {
+    letter-spacing: 2px;
+}
