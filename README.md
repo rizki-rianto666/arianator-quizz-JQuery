@@ -2,11 +2,11 @@
 
 This is a simple quiz app for arianator to test their knowledge in terms of Ariana (her songs, personal etc)<br>
 I made two different codes for the project, the vanilla JS and with Jquery, both are doing the exact same thing.
-
+<b>Deployed in Vercel: <i>https://arianator-quiz.vercel.app/</i></b>
 <br>
 <b>Name: M. Rizki Rianto</b><br>
 <b>NIM: I.2210881</b>
-<b>Deployed in Vercel: <i>https://arianator-quiz.vercel.app/</i></b>
+
 <br>
 ![indexHTML](https://github.com/rizki-rianto666/arianator-quizz-JQuery/assets/115854620/f8311d25-715b-4012-aba6-e42856efdf84)
 <br>
