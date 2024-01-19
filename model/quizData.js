@@ -1,8 +1,8 @@
 export const QA = {
     q1: {
         question: "What is the title of Ariana Grande's debut single?",
-        choices: ['Problem', 'The Way', 'Bang Bang', 'No Tears Left to Cry'],
-        answer: "q1 The Way",
+        choices: ['Problem', 'Put Your Hearts Up', 'Bang Bang', 'The Way'],
+        answer: "q1 Put Your Hearts Up",
     },
     q2: {
         question: "In which year did Ariana Grande release her first studio album?",
@@ -36,8 +36,8 @@ export const QA = {
     },
     q8: {
         question: "What is Ariana Grande's full name?",
-        choices: ["Ariana Frankie Grande", "Ariana Butera", "Ariana Minaj", "Ariana Butera Grande"],
-        answer: "q8 Ariana Butera Grande"
+        choices: ["Ariana Frankie Grande", "Ariana Butera Grande", "Ariana Minaj", "Ariana Grande-Butera"],
+        answer: "q8 Ariana Grande-Butera"
     },
     q9: {
         question: "Which Ariana Grande song features the lyrics 'I want it, I got it'?",
@@ -46,53 +46,22 @@ export const QA = {
     },
     q10: {
         question: "Which song by Ariana Grande features the line 'But this one gon' last'?",
-        choices: ["Breathin", "No Tears Left to Cry", "One Last Time", "Everyday"],
-        answer: "q10 No Tears Left to Cry"
+        choices: ["Breathin'", "Thank U, Next", "One Last Time", "Everyday"],
+        answer: "q10 Thank U, Next"
+    },
+    q11: {
+        question: "Which album was the name of Ariana's last tour?",
+        choices: ["Thank U, Next", "Positions", "Eternal Sunshine", "Sweetener"],
+        answer: "q11 Sweetener"
+    },
+    q12: {
+        question: "Ariana has dogs, which one of these included?",
+        choices: ["Merry", "Jerry", "Moore", "Toulouse"],
+        answer: "q12 Toulouse"
+    },
+    q13: {
+        question: "Which rapper has Ariana Grande collaborated the most?",
+        choices: ["J. Cole", "Mac Miller", "Nicki Minaj", "Doja Cat"],
+        answer: "q13 Mac Miller"
     }
-
 };
-
-// Feel free to customize or add more questions based on your preferences!
-
-let counter = 1;
-
-export function createHtml() {
-
-    for (const key in QA) {
-        if (Object.hasOwnProperty.call(QA, key)) {
-            const qs = QA[key];
-            document.getElementById('qCards').append(createCardsHTML(key, qs))
-        }
-
-    }
-    document.getElementById('qCards').innerHTML +=
-        `
-            <div class="button-wrapper">
-                <a id="back" href="index.html">Back</a>
-                <button id="submit">Submit</button>
-            </div>
-        `
-
-}
-
-//ADDITIONAL FUNCTIONS
-function createCardsHTML(key, question) {
-    const divQs = document.createElement('div');
-    divQs.setAttribute('id', `${key}`)
-    divQs.setAttribute('class', 'Qs')
-
-    let html = `<h4 class="questions">${counter}. ${question.question}</h4>`; counter++
-
-    question.choices.forEach(choice => {
-        html += ` <div class="opt" data-option="${key}">
-        <p>${choice}</p>
-    </div>`
-    });
-
-
-
-    divQs.innerHTML = html;
-    console.log(divQs);
-    return divQs;
-}
-

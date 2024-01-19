@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'luckiest guy';
+    src: url('../fonts/LuckiestGuy-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+
+    background-color: rgb(218, 245, 243);
+    font-family: 'poppins';
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.196);
+}
+
+
+header h2 {
+    width: 100%;
+    font-size: 2.4rem;
+    -webkit-text-stroke: white 1px;
+    letter-spacing: 1px;
+    font-family: 'luckiest guy';
+    color: rgb(95, 184, 221);
+    font-style: italic;
+}
+
+
+/* MAIN */
+main {
+    padding: 60px;
+}
+
+/* quiz questions */
+
+
+.wrapper h2 {
+    text-align: center;
+    width: 100%;
+    color: rgb(229, 144, 213);
+    font-family: 'luckiest guy';
+    font-size: 4rem;
+    -webkit-text-stroke: white 3px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    background: linear-gradient(140deg, rgba(2, 91, 147, 0.742), rgba(174, 41, 211, 0.702));
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 4px 10px;
+    padding: 40px;
+    padding-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+#qCards {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Qs {
+    background-color: rgba(204, 138, 233, 0.512);
+    padding: 15px;
+    border-radius: 7px;
+    color: rgb(241, 236, 229);
+}
+
+.questions {
+    color: white;
+}
+
+.opt {
+    padding: 10px;
+    background-color: rgb(106, 103, 136);
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.opt:hover {
+    filter: brightness(120%);
+    transition: filter 0.15s;
+}
+
+/* Clicked Option */
+.clicked {
+    background-color: rgb(199, 112, 226);
+    filter: brightness(110%);
+}
+
+/* button */
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit,
+#next {
+    background-color: rgb(236, 203, 159);
+    color: rgb(176, 34, 227);
+    border: none;
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    width: 90px;
+    transition: background-color 0.2s, color 0.2s;
+
+}
+
+#next:hover {
+    background-color: rgb(249, 157, 235);
+    color: rgb(243, 215, 178);
+
+}
+
+#submit:hover {
+    background-color: rgb(245, 117, 185);
+    color: rgb(236, 203, 159);
+}
+
+:is(#next, #submit):active {
+    transform: scale(90%);
+    filter: brightness(90%);
+    transition: 0.4s;
+}
+
+
+/* Display score */
+#displayScore,
+.backFromDS {
+    color: rgb(255, 220, 174);
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.511) 2px 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
+.scoreSpan {
+    color: rgb(94, 193, 198);
+}
+
+.backFromDS-wrapper {
+    margin: 90px;
+}
+
+.backFromDS {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.4s;
+    margin-top: 0;
+}
+
+
+.backFromDS:hover {
+    letter-spacing: 5px;
+    text-shadow: rgb(94, 193, 198) 10px 2px;
+}
+
+.backFromDS:active {
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.4s;
+}
+
+.backFromDS-wrapper {
+    text-align: center;
+}
+
+.arianator-level {
+    margin: auto;
+    background-color: rgb(150, 114, 184);
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 40px;
+    min-height: 100px;
+    background-color: rgb(64, 62, 62);
+}
+
+figure {
+    color: rgb(185, 185, 185);
+    margin-top: 10px;
+}
+
+
+figure img {
+    margin-top: 5px;
+    width: 40px;
+    filter: brightness(60%);
+}
+
+figure a {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure a:hover {
+    filter: brightness(120%);
+}

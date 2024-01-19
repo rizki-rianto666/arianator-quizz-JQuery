@@ -70,13 +70,17 @@ main div a {
 }
 
 
-
 main div a:hover {
     letter-spacing: 4px;
 }
 
-
 .whatfan {
     color: rgb(243, 89, 238);
     font-style: italic;
+}
+
+.giveAshot {
+    color: rgb(245, 203, 228);
+    font-style: oblique;
+    font-size: 2rem;
 }
