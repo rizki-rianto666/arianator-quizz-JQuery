@@ -4,5 +4,5 @@ This is a simple quiz app for arianator to test their knowledge in terms of Aria
 I made two different codes for the project, the vanilla JS and with Jquery, both are doing the exact same thing.
 
 <br>
-Name: M. Rizki Rianto
-NIM: I.2210881
+<b>Name: M. Rizki Rianto</b><br>
+<b>NIM: I.2210881</b>
