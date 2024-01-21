@@ -84,3 +84,17 @@ main div a:hover {
     font-style: oblique;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 60%;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .whatfan {
+        font-size: 100%;
+    }
+}
