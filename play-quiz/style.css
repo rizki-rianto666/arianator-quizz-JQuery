@@ -238,3 +238,27 @@ figure a {
 figure a:hover {
     filter: brightness(120%);
 }
+
+
+@media screen and (max-width:500px) {
+    header h2 {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    .wrapper h2 {
+        font-size: 3.5rem;
+        margin-bottom: 5px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer>* {
+        font-size: 90%;
+    }
+}
