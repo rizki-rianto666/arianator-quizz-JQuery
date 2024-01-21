@@ -240,6 +240,7 @@ figure a:hover {
 }
 
 
+
 @media screen and (max-width:500px) {
     header h2 {
         font-size: 1.8rem;
@@ -258,7 +259,30 @@ figure a:hover {
         padding: 20px;
     }
 
+    footer {
+
+        bottom: 0;
+    }
+
     footer>* {
         font-size: 90%;
+    }
+
+    /* Display Score */
+    .dpScoreWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #displayScore,
+    .backFromDS {
+        font-size: 2.1rem;
+    }
+
+    .backFromDS-wrapper {
+        margin-bottom: 10px;
+        padding-inline: 5px;
     }
 }
